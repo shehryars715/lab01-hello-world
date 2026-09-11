@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shehryar - Data Science undergraduate and research profile">
+  <title>Shehryar | Data Science</title>
+  
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card-bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555555;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --tag-bg: #f3f4f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 2.5rem 1.25rem;
+    }
+
+    header, main, footer {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #111;
+      margin-bottom: 0.6rem;
+    }
+
+    .tagline {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .contact span {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    section {
+      padding: 2.25rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-heading {
+      margin-bottom: 1.25rem;
+    }
+
+    .section-heading h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .section-heading p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* Intro & Facts */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .intro p {
+      color: #333;
+      font-size: 0.98rem;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.85rem;
+    }
+
+    .fact {
+      background: var(--card-bg);
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .fact strong {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .fact span {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* Timeline */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    article {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+
+    .role {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--accent);
+      display: block;
+    }
+
+    .date {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    article h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+
+    article ul {
+      margin-left: 1.25rem;
+      font-size: 0.92rem;
+      color: #333;
+    }
+
+    article ul li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Projects */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .project-grid p {
+      font-size: 0.92rem;
+      color: #444;
+      margin-bottom: 0.75rem;
+    }
+
+    .tools {
+      font-size: 0.75rem !important;
+      font-weight: 600;
+      color: var(--muted) !important;
+      background: var(--tag-bg);
+      padding: 0.35rem 0.6rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0 !important;
+    }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .skill strong {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+
+    .skill span {
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    footer {
+      padding: 2.5rem 0 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <p class="eyebrow">Web Engineering Lab 01 · BSDS-02</p>
+      <h1>Hello, I’m Shehryar.</h1>
+      <p class="tagline">Data Science undergraduate at NUST SEECS exploring reliable machine learning, interpretable AI, and agentic systems.</p>
+      <div class="contact">
+        <span>Islamabad, Pakistan</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <div class="section-heading">
+          <h2>Research profile</h2>
+        </div>
+        <p>I work across machine learning, deep learning, time-series modelling, natural language processing, and agentic AI. My current work combines language models with deterministic engineering tools for dependable wireless link-budget planning.</p>
+      </div>
+      <div class="facts">
+        <div class="fact">
+          <strong>Education</strong>
+          <span>B.S. Data Science, NUST SEECS · 2024–2028</span>
+        </div>
+        <div class="fact">
+          <strong>Current research</strong>
+          <span>IPT Lab · LLM-assisted wireless link-budget planning</span>
+        </div>
+        <div class="fact">
+          <strong>Publication</strong>
+          <span>Formula 1 telemetry forecasting manuscript under review at Applied Intelligence</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>Experience</h2>
+        <p>Selected work</p>
+      </div>
+      <div class="timeline">
+        <article>
+          <span class="role">Research intern · IPT Lab, NUST SEECS</span>
+          <span class="date">Jul 2026 – Present</span>
+          <h3>Agentic AI for wireless link-budget planning</h3>
+          <ul>
+            <li>Designed a 27-scenario evaluation of Llama 3.1 8B with deterministic engineering calculators.</li>
+            <li>Adaptive power selection resolved 6 of 7 baseline-failing scenarios.</li>
+          </ul>
+        </article>
+
+        <article>
+          <span class="role">Research project · Co-author</span>
+          <span class="date">Jan 2026 – Jun 2026</span>
+          <h3>Cross-circuit Formula 1 telemetry forecasting</h3>
+          <ul>
+            <li>Evaluated nine ML and deep learning models across 159,712 telemetry frames from four circuits.</li>
+            <li>Used Leave-One-Circuit-Out evaluation and Integrated Gradients to study generalisation.</li>
+          </ul>
+        </article>
+
+        <article>
+          <span class="role">Data research analyst · BisViews</span>
+          <span class="date">Mar 2026 – Present</span>
+          <h3>Business data validation</h3>
+          <ul>
+            <li>Built Python and API-driven workflows to validate business identity, addresses, coordinates, and data quality.</li>
+            <li>Automated review tasks with pandas and openpyxl.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>Selected projects</h2>
+        <p>Data in practice</p>
+      </div>
+      <div class="project-grid">
+        <article>
+          <h3>Climate variability &amp; drought risk</h3>
+          <p>Analysed observations from 15 Pakistani cities from 1990–2023 using SPI, ARIMA, Mann-Kendall, ANOVA, and regression.</p>
+          <p class="tools">Python · SciPy · Statsmodels · Pandas</p>
+        </article>
+        <article>
+          <h3>Real-time Reddit sentiment dashboard</h3>
+          <p>Built an NLP pipeline for collection and classification with live monitoring through Streamlit.</p>
+          <p class="tools">Python · PRAW · RoBERTa · VADER · Streamlit</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <h2>Technical toolkit</h2>
+        <p>Tools I use</p>
+      </div>
+      <div class="skills">
+        <div class="skill">
+          <strong>Programming</strong>
+          <span>Python · SQL · R · C++ · Java</span>
+        </div>
+        <div class="skill">
+          <strong>Machine learning</strong>
+          <span>Scikit-Learn · XGBoost · Random Forest · Time-series classification</span>
+        </div>
+        <div class="skill">
+          <strong>Deep learning</strong>
+          <span>PyTorch · TensorFlow · CNNs · LSTM/GRU · TCNs · Transformers</span>
+        </div>
+        <div class="skill">
+          <strong>Agentic AI &amp; NLP</strong>
+          <span>LLM tool calling · Groq API · HuggingFace · RoBERTa · VADER</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Web Engineering Lab 01 · Shehryar · NUST SEECS
+  </footer>
+</body>
+</html>
